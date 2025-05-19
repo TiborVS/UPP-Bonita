@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
+    <businessObjects>
+        <businessObject qualifiedName="si.um.feri.model.BusinessObject">
+            <fields>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="si.um.feri.model.VlogaZaRegistracijo">
+            <fields>
+                <field type="STRING" length="255" name="vozilo_id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lastnik_ime" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lastnik_priimek" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vozilo_letnik" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lastnik_emso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vozilo_ime" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prometno_dovoljenje_st" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

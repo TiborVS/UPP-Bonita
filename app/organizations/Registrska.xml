@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="joze">
+      <firstName>Jo&#x17e;e</firstName>
+      <lastName>Novak</lastName>
+      <title>G.</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">joze</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="admin">
+      <firstName>Admin</firstName>
+      <lastName>Istrator</lastName>
+      <title>dr.</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">admin</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Vlagatelj">
+      <displayName>Vlagatelj</displayName>
+      <description></description>
+    </role>
+    <role name="Administrator">
+      <displayName>Administrator</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="RegistracijskaOrganizacija">
+      <displayName>RegistracijskaOrganizacija</displayName>
+    </group>
+    <group name="Administratorji" parentPath="/RegistracijskaOrganizacija">
+      <displayName>Administratorji</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>joze</userName>
+      <roleName>Vlagatelj</roleName>
+      <groupName>RegistracijskaOrganizacija</groupName>
+    </membership>
+    <membership>
+      <userName>admin</userName>
+      <roleName>Administrator</roleName>
+      <groupName>Administratorji</groupName>
+      <groupParentPath>/RegistracijskaOrganizacija</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
